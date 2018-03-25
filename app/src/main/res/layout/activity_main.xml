@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.buchmuller.gerenciamentodeclientes.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="11dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dados do Cliente"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <EditText
+            android:id="@+id/nome_cliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome" />
+
+        <EditText
+            android:id="@+id/email_cliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-mail" />
+
+        <EditText
+            android:id="@+id/CPF_cliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CPF" />
+
+        <EditText
+            android:id="@+id/senha_cliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Senha" />
+
+        <EditText
+            android:id="@+id/endereco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Endereço" />
+
+        <EditText
+            android:id="@+id/estado"
+            android:layout_width="362dp"
+            android:layout_height="wrap_content"
+            android:hint="Estado" />
+
+        <EditText
+            android:id="@+id/municipio"
+            android:layout_width="362dp"
+            android:layout_height="wrap_content"
+            android:hint="Municipio" />
+
+        <EditText
+            android:id="@+id/telefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telefone" />
+
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="360dp"
+            android:layout_height="29dp"
+            android:background="@color/colorAccent"
+            android:onClick="incluirCliente"
+            android:text="Cadastrar"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/btn_list"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginTop="11dp"
+            android:background="@color/colorAccent"
+            android:onClick="listaCliente"
+            android:text="Visualizar Cadastro"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

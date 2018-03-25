@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.buchmuller.gerenciamentodeclientes.EditActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="11dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alteração de Dados do Cliente"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="22dp" />
+
+        <EditText
+            android:id="@+id/codigo_cliente"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:hint="Id"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/nome_cliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome" />
+
+        <EditText
+            android:id="@+id/email_cliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-mail" />
+
+        <EditText
+            android:id="@+id/CPF_cliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CPF" />
+
+        <EditText
+            android:id="@+id/senha_cliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Senha" />
+
+        <EditText
+            android:id="@+id/endereco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Endereço" />
+
+        <EditText
+            android:id="@+id/estado"
+            android:layout_width="362dp"
+            android:layout_height="wrap_content"
+            android:hint="Estado" />
+
+        <EditText
+            android:id="@+id/municipio"
+            android:layout_width="362dp"
+            android:layout_height="wrap_content"
+            android:hint="Municipio" />
+
+        <EditText
+            android:id="@+id/telefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telefone" />
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:background="@color/colorAccent"
+            android:onClick="atualizarCliente"
+            android:text="Atualizar Cadastro"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/btn_list"
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:layout_marginTop="11dp"
+            android:background="@color/colorAccent"
+            android:onClick="listarClientes"
+            android:text="Visualizar Cadastro"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:layout_marginTop="11dp"
+            android:background="@color/colorAccent"
+            android:onClick="excluirCliente"
+            android:text="Excluir Cadastro"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
